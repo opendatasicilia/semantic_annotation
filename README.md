@@ -12,7 +12,10 @@ Creare un file .env con il seguente contenuto:
 export TAGME_TOKEN='****'
 ```
 
-Caricarlo con: source .env
+Caricarlo con: 
+``` bash
+source .env
+``` 
 
 # TODO:
 - modulo query SPARQL
