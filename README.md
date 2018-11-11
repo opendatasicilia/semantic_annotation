@@ -1,6 +1,8 @@
 # semantic_annotation
 Arrichimento semantico degli Atti di OpenArs 
 
+Permette di linkare il contenuto testuale degli atti di OpenArs.org con tag semantici presenti in dbpedia.
+
 # Configurazione
 Creare un file .env con il seguente contenuto:
 
@@ -10,8 +12,9 @@ Creare un file .env con il seguente contenuto:
 export TAGME_TOKEN='****'
 ```
 
+Caricarlo con: source .env
+
 # TODO:
 - modulo query SPARQL
-- finire l'interfaccia con TAGME
 - generatore URI dbpedia
 - salvataggio csv file, formato: uri_atto, start, end, dbpedia_uri
