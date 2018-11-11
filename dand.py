@@ -1,5 +1,5 @@
 from dandelion import DataTXT
-from conf import tokens
+from config import tokens
 
 currToken = 0
 
