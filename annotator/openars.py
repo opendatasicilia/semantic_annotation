@@ -1,33 +1,5 @@
-import os
-
-import tagme
-
-tagme.GCUBE_TOKEN = os.environ['TAGME_TOKEN']
-tagme.DEFAULT_LANG = 'it'
-
-
-def annotate_act(act):
-    annotations = tagme.annotate(act, lang=tagme.DEFAULT_LANG)
-    for annotation in annotations.get_annotations():
-        yield annotation.begin, annotation.end, annotation.uri()
-
-
 from SPARQLWrapper import SPARQLWrapper, JSON
-def check_dbpedia_resource(resource):
-    query = """
-PREFIX dbres: <http://dbpedia.org/resource/>
-        
-DESCRIBE dbres:{resource}
-LIMIT 1 
-    """.format(resource=resource)
 
-    print(query)
-    sparql = SPARQLWrapper("http://it.dbpedia.org/sparql")
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-
-    print(results)
 
 def get_total_ddl():
     query = """
@@ -44,13 +16,16 @@ def get_total_ddl():
 						
 		   }
     """
-    
+
     sparql = SPARQLWrapper("http://virtuosa.pa2.itd.cnr.it:8890/sparql")
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
-    results = int(sparql.query().convert()['results']['bindings'][0]['callret-0']['value'])
-    
+    json_result = sparql.query().convert()
+    print(json_result)
+    results = int(json_result['results']['bindings'][0]['callret-0']['value'])
+
     return results
+
 
 def get_ddl_data(limit, offeset):
     query = """
@@ -69,10 +44,10 @@ def get_ddl_data(limit, offeset):
 		limit %d
 		offset %d
     """ % (limit, offeset)
-    
+
     sparql = SPARQLWrapper("http://virtuosa.pa2.itd.cnr.it:8890/sparql")
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()['results']['bindings']
-    
+
     return results
