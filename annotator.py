@@ -15,18 +15,19 @@ def annotate_act(act):
 from SPARQLWrapper import SPARQLWrapper, JSON
 def check_dbpedia_resource(resource):
     query = """
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT ?label
-        WHERE { <http://dbpedia.org/resource/Asturias> rdfs:label ?label }
-    """
+PREFIX dbres: <http://dbpedia.org/resource/>
+        
+DESCRIBE dbres:{resource}
+LIMIT 1 
+    """.format(resource=resource)
 
-    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    print(query)
+    sparql = SPARQLWrapper("http://it.dbpedia.org/sparql")
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
 
-    for result in results["results"]["bindings"]:
-        print(result["label"]["value"])
+    print(results)
 
 
 
