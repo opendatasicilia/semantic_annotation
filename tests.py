@@ -1,5 +1,5 @@
 from annotator import annotate_act
-from annotator.openars import get_total_ddl, get_ddl_data
+from annotator.openars import get_total_acts, get_acts_data, iterate_acts
 from annotator.wikidata import check_dbpedia_resource
 
 
@@ -26,26 +26,11 @@ def test_check_dbpedia_resource_rainy():
     assert not result
 
 
-def test_get_ddl_data():
-    limit = 100
-    offset = 0
-    total = get_total_ddl()
-    last_chunk_index = int(total/limit)+1
+def test_iterate_acts():
+	
+	for act_id, act_text in iterate_acts():
+		print(act_id)
+		print(act_text)
+		input()
 
-    for i in range(0, last_chunk_index):
-        chunk = get_ddl_data(limit, offset)
-        offset += limit
-
-        # do something with chunk
-        print('chunk no: %d \n\n' % i)
-        for ddl in chunk:
-            ddl_id = ddl['ddl']['value']
-            print('id: %s \n' % ddl_id)
-
-            title = ddl['titolo']['value']
-            print('title: %s \n' % title)
-
-            text = ddl['text']['value']
-            print('text:\n\n\n%s' % text)
-
-            exit()
+test_iterate_acts()
