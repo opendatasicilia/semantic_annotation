@@ -18,6 +18,4 @@ source .env
 ``` 
 
 # TODO:
-- modulo query SPARQL
-- generatore URI dbpedia
-- salvataggio csv file, formato: uri_atto, start, end, dbpedia_uri
+- iterare per ogni atto, iterare per ogni annotazione, se esiste una entry su wikidata, aggiungere linea al file csv, formato: uri_atto, start, end, wikidata_uri
