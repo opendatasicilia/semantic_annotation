@@ -1,7 +1,10 @@
 # semantic_annotation
 Arrichimento semantico degli Atti di OpenArs 
+Attraverso l'utilizzo di [tagme](https://services.d4science.org/web/tagme) permette di linkare il contenuto testuale degli atti di OpenArs.org con tag semantici presenti in Wikidata.
 
-Permette di linkare il contenuto testuale degli atti di OpenArs.org con tag semantici presenti in dbpedia.
+# Installazione:
+1. Creare un python virtual environment (python3)
+2. Installare le dipendenze in requirements.txt
 
 # Configurazione
 Creare un file .env con il seguente contenuto:
@@ -17,5 +20,7 @@ Caricarlo con:
 source .env
 ``` 
 
-# TODO:
-- iterare per ogni atto, iterare per ogni annotazione, se esiste una entry su wikidata, aggiungere linea al file csv, formato: uri_atto, start, end, wikidata_uri
+# Esecuzione:
+``` bash
+python annotator.py
+```
