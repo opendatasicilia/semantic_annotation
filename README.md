@@ -24,3 +24,7 @@ source .env
 ``` bash
 python annotator.py
 ```
+# Todo (next sprint 23/11/2018):
+- Generazione file TTL;
+- Spike: Lista di UI interessanti che usano Wikidata (pubblicazione su DataNinja);
+- Testare Airflow: (git branch)
