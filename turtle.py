@@ -21,7 +21,8 @@ store = Graph()
 # Bind a few prefix, namespace pairs for pretty output
 store.bind("NEE", NEE)
 
-# Create an identifier to use as the subject for Donna.
+# Create an identifier
+    # todo: non usare BNODE, ma resource, chiedere la uri
 act = BNode()
 
 # Add triples using store's add method.
