@@ -1,6 +1,6 @@
 from rdflib.namespace import Namespace
 
-from rdflib import Graph, Literal, BNode, RDF
+from rdflib import Graph, Literal, BNode, RDF, URIRef
 
 #### testing configuration: ######
 act_text = """Disegno di Legge n 12.
@@ -53,8 +53,7 @@ store.add((act, NEE.position, Literal(start)))
 # store.add((act, NEE.belongsTo,
 
 # Relates an entity to a URI.
-           #todo: check if using a literal for a URI is right
-store.add((act, NEE.hasMatchedURI, Literal(uri_wikidata)))
+store.add((act, NEE.hasMatchedURI, URIRef(uri_wikidata)))
 
 byte_output = store.serialize(format="turtle")
 
