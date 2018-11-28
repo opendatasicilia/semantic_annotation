@@ -26,7 +26,7 @@ def annotate_act(act):
     print("Annotating act: {act_text}".format(act_text=act[:100]))
     annotations = tagme.annotate(act, lang=LANGUAGE)
     for annotation in annotations.get_annotations(min_rho=MIN_RHO):
-        yield annotation.begin, annotation.end, annotation.entity_id, annotation.uri(lang=LANGUAGE)
+        yield annotation.begin, annotation.end, annotation.entity_id, annotation.uri(lang=LANGUAGE), annotation.mention
 
 
 def get_total_acts():
@@ -135,20 +135,20 @@ WHERE
 def generate_csv():
     # initializing the csv file
     with open('output.csv', 'w', newline='') as csvfile:
-        csv_writer = csv.DictWriter(csvfile, fieldnames=["act_uri", "ann_begin", "ann_end", "wikidata_uri"])
+        csv_writer = csv.DictWriter(csvfile, fieldnames=["act_uri", "ann_begin", "ann_end", "wikidata_uri", "mention"])
 
         # for each act start, end, wikidata_uri
         for act_uri, act_text in iterate_acts():
             # for each annotation
-            for beg, end, ent_id, ent_wikipedia_uri in annotate_act(act_text):
+            for beg, end, ent_id, ent_wikipedia_uri, mention in annotate_act(act_text):
                 # if exists a wikidata entry
                 ent_wikidata_uri = check_wikidata_resource(ent_wikipedia_uri)
                 if ent_wikidata_uri is not None:
                     # adding an entry to the csv file
-                    entry = dict(act_uri=act_uri, ann_begin=beg, ann_end=end, wikidata_uri=ent_wikidata_uri)
+                    entry = dict(act_uri=act_uri, ann_begin=beg, ann_end=end, wikidata_uri=ent_wikidata_uri, mention=mention)
                     csv_writer.writerow(entry)
                     # print(entry)
-
+                    csvfile.flush()
     print('*** End ***')
 
 generate_csv()
