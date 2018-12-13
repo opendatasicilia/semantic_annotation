@@ -46,18 +46,12 @@ annotation_tuples = [
 
      ]
 
-def urify(val):
-    val=val.replace(" ", "_")
-    return val
-
 NIF = Namespace('http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#')
 ITS = Namespace('http://www.w3.org/2005/11/its/rdf#')
 
 g = Graph()
 g.bind("nif", NIF)
 g.bind("itsrdf", ITS)
-
-res=URIRef("http://www.openars.org/test11")
 
 for t in annotation_tuples:
     res=URIRef(t[0]+"#char="+str(t[1])+","+str(t[2]))
