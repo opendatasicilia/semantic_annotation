@@ -1,10 +1,12 @@
 # semantic_annotation
 Arrichimento semantico degli Atti di OpenArs 
 Attraverso l'utilizzo di [tagme](https://services.d4science.org/web/tagme) permette di linkare il contenuto testuale degli atti di OpenArs.org con tag semantici presenti in Wikidata.
+Usa Airflow, docker, docker-compose e opzionalmente celery.
 
-# Installazione:
-1. Creare un python virtual environment (python3)
-2. Installare le dipendenze in requirements.txt
+# Build:
+``` bash
+make local-build
+```
 
 # Configurazione
 Creare un file .env con il seguente contenuto:
@@ -22,9 +24,17 @@ source .env
 
 # Esecuzione:
 ``` bash
-python annotator.py
+make local-up
 ```
-# Todo (next sprint 23/11/2018):
-- Generazione file TTL;
+
+
+# Sviluppo:
+``` bash
+pip install -r requirements/dev.txt
+```
+
+# Todo:
+- plug nicely airflow and testing;
+- 
 - Spike: Lista di UI interessanti che usano Wikidata (pubblicazione su DataNinja);
-- Testare Airflow: (git branch)
+
