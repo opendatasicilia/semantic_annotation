@@ -1,0 +1,128 @@
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=204,214> a nif:String ;
+    nif:beginIndex "204"^^xsd:nonNegativeInteger ;
+    nif:endIndex "214"^^xsd:nonNegativeInteger ;
+    nif:isString "ecosistemi"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q37813> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=47,84> a nif:String ;
+    nif:beginIndex "47"^^xsd:nonNegativeInteger ;
+    nif:endIndex "84"^^xsd:nonNegativeInteger ;
+    nif:isString """PROPOSTA
+                         DI LEGGE"""@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q686822> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=470,480> a nif:String ;
+    nif:beginIndex "470"^^xsd:nonNegativeInteger ;
+    nif:endIndex "480"^^xsd:nonNegativeInteger ;
+    nif:isString "mondo  non"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q957076> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=656,659> a nif:String ;
+    nif:beginIndex "656"^^xsd:nonNegativeInteger ;
+    nif:endIndex "659"^^xsd:nonNegativeInteger ;
+    nif:isString "ciò"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q40970> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=679,691> a nif:String ;
+    nif:beginIndex "679"^^xsd:nonNegativeInteger ;
+    nif:endIndex "691"^^xsd:nonNegativeInteger ;
+    nif:isString "neoliberista"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q162719> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=868,878> a nif:String ;
+    nif:beginIndex "868"^^xsd:nonNegativeInteger ;
+    nif:endIndex "878"^^xsd:nonNegativeInteger ;
+    nif:isString "ecosistema"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q37813> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/102#char=881,884> a nif:String ;
+    nif:beginIndex "881"^^xsd:nonNegativeInteger ;
+    nif:endIndex "884"^^xsd:nonNegativeInteger ;
+    nif:isString "Ciò"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q40970> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=1225,1241> a nif:String ;
+    nif:beginIndex "1225"^^xsd:nonNegativeInteger ;
+    nif:endIndex "1241"^^xsd:nonNegativeInteger ;
+    nif:isString "disegno di legge"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q686822> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=1299,1307> a nif:String ;
+    nif:beginIndex "1299"^^xsd:nonNegativeInteger ;
+    nif:endIndex "1307"^^xsd:nonNegativeInteger ;
+    nif:isString "delibera"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q3705013> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=146,162> a nif:String ;
+    nif:beginIndex "146"^^xsd:nonNegativeInteger ;
+    nif:endIndex "162"^^xsd:nonNegativeInteger ;
+    nif:isString "DISEGNO DI LEGGE"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q686822> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=1589,1607> a nif:String ;
+    nif:beginIndex "1589"^^xsd:nonNegativeInteger ;
+    nif:endIndex "1607"^^xsd:nonNegativeInteger ;
+    nif:isString "Regione  siciliana"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q1460> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=1646,1666> a nif:String ;
+    nif:beginIndex "1646"^^xsd:nonNegativeInteger ;
+    nif:endIndex "1666"^^xsd:nonNegativeInteger ;
+    nif:isString "Corte costituzionale"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q32766> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=2156,2186> a nif:String ;
+    nif:beginIndex "2156"^^xsd:nonNegativeInteger ;
+    nif:endIndex "2186"^^xsd:nonNegativeInteger ;
+    nif:isString "contratto  a tempo determinato"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q1221208> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=217,223> a nif:String ;
+    nif:beginIndex "217"^^xsd:nonNegativeInteger ;
+    nif:endIndex "223"^^xsd:nonNegativeInteger ;
+    nif:isString "Turano"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q112151> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=22,51> a nif:String ;
+    nif:beginIndex "22"^^xsd:nonNegativeInteger ;
+    nif:endIndex "51"^^xsd:nonNegativeInteger ;
+    nif:isString "ASSEMBLEA REGIONALE SICILIANA"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q2707406> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=2539,2556> a nif:String ;
+    nif:beginIndex "2539"^^xsd:nonNegativeInteger ;
+    nif:endIndex "2556"^^xsd:nonNegativeInteger ;
+    nif:isString "Regione siciliana"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q1460> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=376,392> a nif:String ;
+    nif:beginIndex "376"^^xsd:nonNegativeInteger ;
+    nif:endIndex "392"^^xsd:nonNegativeInteger ;
+    nif:isString "DISEGNO DI LEGGE"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q686822> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=496,507> a nif:String ;
+    nif:beginIndex "496"^^xsd:nonNegativeInteger ;
+    nif:endIndex "507"^^xsd:nonNegativeInteger ;
+    nif:isString "agricoltura"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q11451> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=509,518> a nif:String ;
+    nif:beginIndex "509"^^xsd:nonNegativeInteger ;
+    nif:endIndex "518"^^xsd:nonNegativeInteger ;
+    nif:isString "industria"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q8148> .
+
+<http://dati.openars.org/legislatura/xvi/attivita-parlamentare/ddl/385#char=831,841> a nif:String ;
+    nif:beginIndex "831"^^xsd:nonNegativeInteger ;
+    nif:endIndex "841"^^xsd:nonNegativeInteger ;
+    nif:isString "Cancelleri"@it ;
+    itsrdf:taldentRef <http://www.wikidata.org/entity/Q16530425> .
+
