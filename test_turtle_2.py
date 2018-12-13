@@ -67,4 +67,4 @@ for t in annotation_tuples:
     g.add( (res, ITS.taldentRef , URIRef(t[3]) ) )
     g.add( (res, NIF.isString , Literal(t[4], lang='it') ) )
 
-g.serialize(destination='/Users/davidetaibi/Documents/ontopia/output.ttl', format='turtle')
+g.serialize(destination='./output.ttl', format='turtle')
