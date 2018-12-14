@@ -32,7 +32,7 @@ Hellmann S., Lehmann J., Auer S., Brümmer M. (2013) Integrating NLP Using Linke
 
 http://svn.aksw.org/papers/2013/ISWC_NIF/public.pdf
 
-# Todo (next sprint 23/11/2018):
-- Generazione file TTL;
+# Todo (next sprint //):
 - Spike: Lista di UI interessanti che usano Wikidata (pubblicazione su DataNinja);
-- Testare Airflow: (git branch)
+- approfondire la modalità per specificare la relazione tra la risorsa disegno di legge e il suo campo:
+-  
