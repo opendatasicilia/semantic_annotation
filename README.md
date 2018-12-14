@@ -24,6 +24,14 @@ source .env
 ``` bash
 python annotator.py
 ```
+
+# Enrichment:
+L'enrichment usa il vocabolario definito in: 
+
+Hellmann S., Lehmann J., Auer S., Brümmer M. (2013) Integrating NLP Using Linked Data. In: Alani H. et al. (eds) The Semantic Web – ISWC 2013. ISWC 2013. Lecture Notes in Computer Science, vol 8219. Springer, Berlin, Heidelberg
+
+http://svn.aksw.org/papers/2013/ISWC_NIF/public.pdf
+
 # Todo (next sprint 23/11/2018):
 - Generazione file TTL;
 - Spike: Lista di UI interessanti che usano Wikidata (pubblicazione su DataNinja);
