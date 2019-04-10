@@ -35,7 +35,7 @@ http://svn.aksw.org/papers/2013/ISWC_NIF/public.pdf
 # Todo (next sprint dd/mm/yyyy):
 - Spike: Lista di UI interessanti che usano Wikidata (pubblicazione su DataNinja);
 - approfondire la modalità per specificare la relazione tra la risorsa disegno di legge e il suo campo:
-- provare a effettuare un ventaglio di branch per ogni singola legge, durante la definizione del dag: obbiettivo sperimentare (anche sbagliare) questo strumento;
+- Airflow: provare a effettuare un ventaglio di branch per ogni singola legge, durante la definizione del DAG: obiettivo sperimentare (anche sbagliare) questo strumento;
 - approfondire strumenti alternativi che permettano di definire il dag (o grafo) dinamicamente;
 - Spike: guardare Solid e capire se si può usare come piattaforma di upload (awesome idea!).
 
